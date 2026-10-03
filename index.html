@@ -3,289 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habiba Khaled | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Habiba Khaled — Backend Developer</title>
+    <meta name="description" content="Portfolio of Habiba Khaled, backend developer working with ASP.NET Core, Entity Framework and SQL Server.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <canvas id="particles-canvas"></canvas>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
-        <nav class="navbar fixed-top navbar-expand-md d-flex justify-content-between align-items-center px-3">
-            <h1 class="m-0 Myname">Habiba <i class="fa-regular fa-star"></i></h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto d-flex gap-4 text-center">
-                    <li class="nav-item">
-                        <a style="color: #a855f7;" class="nav-link fs-5"  href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: #a855f7;" class="nav-link fs-5" href="#Education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: #a855f7;" class="nav-link fs-5" href="#Experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: #a855f7;" class="nav-link fs-5" href="#Services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: #a855f7;" class="nav-link fs-5" href="#Skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: #a855f7;" class="nav-link fs-5" href="#Projs">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: #a855f7;" class="nav-link fs-5" href="#Contacts">Contact</a>
-                    </li>
-                </ul>
+    <header class="site-header">
+        <nav class="nav wrap">
+            <a class="brand" href="#home">Habiba Khaled</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">Menu</button>
+            <div class="nav-menu" id="navMenu">
+                <a href="#About">About</a>
+                <a href="#Education">Education</a>
+                <a href="#Experience">Experience</a>
+                <a href="#Services">Services</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contacts">Contact</a>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero -->
-        <div class="hero text-center" id="home">
-            <div class="col-12 d-flex flex-column align-items-center">
-                <h4 class="mb-3">Welcome to my world</h4>
-                <h1>Hello, I'm <span class="typing-text"></span></h1>
-                <p class="fs-4 mt-3" style="color: #94a3b8;">Website Designer | Backend Developer | Problem Solver</p>
-                <a class="cta-btn" href="#About">About Me</a>
-            </div>
-        </div>
-
-        <!-- About Me -->
-        <section id="About">
-            <div class="row align-items-center p-4 reveal">
-                <div class="col-12 col-md-5 text-center">
-                    <img src="Imgs/Myimg.jpg" alt="My Image" class="Myimg">
+        <section class="hero" id="home">
+            <div class="wrap">
+                <p class="eyebrow reveal">Portfolio</p>
+                <h1 class="reveal">Habiba<br>Khaled</h1>
+                <p class="lede reveal">Backend developer and website designer. I study computer science at El&#8209;Shorouck Academy and spend most of my time on ASP.NET Core, SQL Server and the unglamorous parts of the backend that nobody sees.</p>
+                <div class="hero-actions reveal">
+                    <a class="btn" href="#About">About me</a>
+                    <a class="btn btn-quiet" href="#Projects">See the projects</a>
                 </div>
-                <div class="col-12 col-md-7">
-                    <p class="About_p">
-                        I am <strong style="color: #a855f7;">Habiba Khaled</strong>, a Computer Science student at El-Shorouck Academy, passionate about learning new things.
-                        I am currently studying Full-Stack Web Development and working on building modern and user-friendly web applications.
-                    </p>
+
+                <dl class="facts reveal">
+                    <div>
+                        <dt>Studying</dt>
+                        <dd>B.Sc. Computer Science</dd>
+                    </div>
+                    <div>
+                        <dt>Building with</dt>
+                        <dd>ASP.NET Core, EF Core, SQL</dd>
+                    </div>
+                    <div>
+                        <dt>Also into</dt>
+                        <dd>Design, OOP, clean APIs</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="About" class="section section-grey">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-index">01</span>
+                    <h2>About</h2>
+                </header>
+                <div class="about-grid">
+                    <figure class="portrait reveal">
+                        <img src="Imgs/Myimg.jpg" alt="Habiba Khaled" width="320" height="400">
+                        <figcaption>Habiba Khaled &mdash; Cairo, Egypt</figcaption>
+                    </figure>
+                    <div class="prose reveal">
+                        <p>I am <strong>Habiba Khaled</strong>, a computer science student at El&#8209;Shorouck Academy. I like the part of web development where a page looks finished and still loads in under a second, and I like that backend work has rules you can actually test.</p>
+                        <p>Right now I am studying full&#8209;stack web development, finishing the DEPI .NET track, and building small real products end to end. I write C# mostly, and I care more about readable code and honest commit messages than clever ones.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Education -->
-        <section id="Education">
-            <h1 class="text-center mt-3 mb-5 reveal">My Education</h1>
-            <div class="timeline px-4 reveal">
-                <div class="timeline-item stagger-item">
-                    <div class="timeline-dot"></div>
-                    <div class="card">
-                        <h4><i class="fa-solid fa-graduation-cap"></i> B.Sc. Computer Science</h4>
-                        <h6>El-Shorouck Academy</h6>
-                        <p class="fs-6">Currently studying Computer Science with a focus on Full-Stack Web Development, algorithms, and modern software engineering practices.</p>
-                    </div>
+        <section id="Education" class="section section-grey">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-index">02</span>
+                    <h2>Education</h2>
+                </header>
+                <div class="entries">
+                    <article class="entry reveal">
+                        <div>
+                            <h3>B.Sc. Computer Science</h3>
+                            <p class="entry-meta">El&#8209;Shorouck Academy</p>
+                        </div>
+                        <p class="entry-text">Currently studying the degree with a focus on full&#8209;stack web development, algorithms and the software engineering habits that come with them.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Experience -->
-        <section id="Experience">
-            <h1 class="text-center mt-3 mb-5 reveal">My Experience</h1>
-            <div class="timeline px-4 reveal">
-                <div class="timeline-item stagger-item">
-                    <div class="timeline-dot"></div>
-                    <div class="card">
-                        <h4><i class="fa-solid fa-laptop-code"></i> DEPI Full Stack .NET</h4>
-                        <h6>Digital Egypt Pioneers Initiative</h6>
-                        <p class="fs-6">Professional training program covering the full .NET ecosystem including ASP.NET Core, MVC, EF Core, LINQ, and building RESTful APIs.</p>
-                    </div>
-                </div>
+        <section id="Experience" class="section">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-index">03</span>
+                    <h2>Experience</h2>
+                </header>
+                <div class="entries">
+                    <article class="entry reveal">
+                        <div>
+                            <h3>DEPI Full Stack .NET</h3>
+                            <p class="entry-meta">Digital Egypt Pioneers Initiative</p>
+                        </div>
+                        <p class="entry-text">Professional training across the .NET ecosystem: ASP.NET Core, MVC, Entity Framework Core, LINQ, and putting a REST API in front of a database that other people can actually use.</p>
+                    </article>
 
-                <div class="timeline-item stagger-item">
-                    <div class="timeline-dot"></div>
-                    <div class="card">
-                        <h4><i class="fa-solid fa-trophy"></i> ECPC Contestant</h4>
-                        <h6>Egyptian Collegiate Programming Contest</h6>
-                        <p class="fs-6">Participated in ECPC and earned 4 balloons for solving competitive programming problems.</p>
-                    </div>
-                </div>
+                    <article class="entry reveal">
+                        <div>
+                            <h3>ECPC contestant</h3>
+                            <p class="entry-meta">Egyptian Collegiate Programming Contest</p>
+                        </div>
+                        <p class="entry-text">Competed at ECPC and collected four balloons for the problems I managed to solve under the clock.</p>
+                    </article>
 
-                <div class="timeline-item stagger-item">
-                    <div class="timeline-dot"></div>
-                    <div class="card">
-                        <h4><i class="fa-solid fa-certificate"></i> NTI Training</h4>
-                        <h6>National Telecommunication Institute</h6>
-                        <p class="fs-6">Professional training certificate covering Web Design.</p>
-                    </div>
-                </div>
+                    <article class="entry reveal">
+                        <div>
+                            <h3>NTI training</h3>
+                            <p class="entry-meta">National Telecommunication Institute</p>
+                        </div>
+                        <p class="entry-text">Professional certificate in web design. This is where I stopped treating CSS as decoration and started treating it as a tool.</p>
+                    </article>
 
-                <div class="timeline-item stagger-item">
-                    <div class="timeline-dot"></div>
-                    <div class="card">
-                        <h4><i class="fa-solid fa-database"></i> SQL Certification</h4>
-                        <h6>Database & Query Fundamentals</h6>
-                        <p class="fs-6">Certified in writing efficient SQL queries and database design, including relational modeling and data manipulation.</p>
-                    </div>
-                </div>
+                    <article class="entry reveal">
+                        <div>
+                            <h3>ITI training &mdash; backend</h3>
+                            <p class="entry-meta">Information Technology Institute</p>
+                        </div>
+                        <p class="entry-text">Backend development training: server&#8209;side development, working with databases, and building the API layer that sits between the interface and the data.</p>
+                    </article>
 
-                <div class="timeline-item stagger-item">
-                    <div class="timeline-dot"></div>
-                    <div class="card">
-                        <h4><i class="fa-solid fa-users"></i> GDSC Member</h4>
-                        <h6>Google Developer Student Clubs</h6>
-                        <p class="fs-6">Active member participating in workshops, hackathons, and collaborative tech community events.</p>
-                    </div>
+                    <article class="entry reveal">
+                        <div>
+                            <h3>SQL certification</h3>
+                            <p class="entry-meta">Database and query fundamentals</p>
+                        </div>
+                        <p class="entry-text">Certified in relational modelling, writing efficient queries and getting data out of a database without making it cry.</p>
+                    </article>
+
+                    <article class="entry reveal">
+                        <div>
+                            <h3>GDSC member</h3>
+                            <p class="entry-meta">Google Developer Student Clubs</p>
+                        </div>
+                        <p class="entry-text">Active member: workshops, hackathons, and helping first&#8209;year students get through their first pull request.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Services -->
-        <section id="Services">
-            <h1 class="text-center mt-3 mb-5 reveal">My Services</h1>
-            <div class="row justify-content-center align-items-stretch g-4 px-3">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
-                        <h4>ASP.NET Backend Development</h4>
-                        <p class="fs-6">I build backend systems using ASP.NET and Clean Architecture.</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
-                        <h4>Database Design</h4>
-                        <p class="fs-6">I design and manage databases using SQL Server and Entity Framework Core.</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <div class="service-icon"><i class="fa-solid fa-plug"></i></div>
-                        <h4>API Development</h4>
-                        <p class="fs-6">I build APIs that connect the application with the database and handle the needed operations.</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
-                        <h4>Backend Updates</h4>
-                        <p class="fs-6">I add new features, make changes, and fix issues based on the client's needs.</p>
-                    </div>
+        <section id="Services" class="section">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-index">04</span>
+                    <h2>What I can do</h2>
+                </header>
+                <div class="services">
+                    <article class="service reveal">
+                        <p class="service-num">i.</p>
+                        <h3>ASP.NET backend development</h3>
+                        <p>Web applications built on ASP.NET Core with Clean Architecture, so the project still makes sense six months later.</p>
+                    </article>
+                    <article class="service reveal">
+                        <p class="service-num">ii.</p>
+                        <h3>Database design</h3>
+                        <p>Schemas and queries designed with SQL Server and Entity Framework Core instead of guessing and adding columns later.</p>
+                    </article>
+                    <article class="service reveal">
+                        <p class="service-num">iii.</p>
+                        <h3>API development</h3>
+                        <p>REST APIs that connect the application to the database, handle the awkward cases, and return something predictable.</p>
+                    </article>
+                    <article class="service reveal">
+                        <p class="service-num">iv.</p>
+                        <h3>Updates and fixes</h3>
+                        <p>New features, small changes and bug fixes on code I did not write, with a short explanation of what I touched.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Skills -->
-        <section id="Skills" class="text-center">
-            <h1 class="text-center mt-3 mb-5 reveal">My Skills</h1>
-            <div class="row justify-content-center align-items-stretch g-4 px-3">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-code"></i> Programming Languages</h4>
-                        <p class="fs-5">C#, C++, Java, JavaScript</p>
+        <section id="Skills" class="section section-grey">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-index">05</span>
+                    <h2>Skills</h2>
+                </header>
+                <dl class="skills">
+                    <div class="skill-row reveal">
+                        <dt>Languages</dt>
+                        <dd>C#, C++, Java, JavaScript</dd>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-palette"></i> Web Design</h4>
-                        <p class="fs-5">HTML, CSS, Bootstrap, Tailwind</p>
+                    <div class="skill-row reveal">
+                        <dt>Web design</dt>
+                        <dd>HTML, CSS, Bootstrap, Tailwind</dd>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-server"></i> Backend Development</h4>
-                        <p class="fs-5">ASP.NET, MVC, EF Core, LINQ, RESTful APIs</p>
+                    <div class="skill-row reveal">
+                        <dt>Backend</dt>
+                        <dd>ASP.NET Core, MVC, EF Core, LINQ, REST APIs</dd>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-brain"></i> Programming Concepts</h4>
-                        <p class="fs-5">OOP, Data Structures, STL</p>
+                    <div class="skill-row reveal">
+                        <dt>Concepts</dt>
+                        <dd>OOP, data structures, STL</dd>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-database"></i> Databases</h4>
-                        <p class="fs-5">SQL, MySQL</p>
+                    <div class="skill-row reveal">
+                        <dt>Databases</dt>
+                        <dd>SQL, SQL Server, MySQL</dd>
                     </div>
-                </div>
+                </dl>
             </div>
         </section>
 
         <!-- Projects -->
-        <section id="Projs">
-            <h1 class="text-center mt-3 mb-5 reveal">My Projects</h1>
-            <div class="row justify-content-center align-items-stretch g-4 px-3">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-cart-shopping"></i> E-Commerce (Decora)</h4>
-                        <p class="fs-6">Furniture website with a clean, responsive design that highlights modern furniture in a user-friendly way.</p>
-                        <h6>Tech: HTML, CSS, JS, Bootstrap</h6>
-                        <a class="mt-auto" href="https://habibakhaledfathallah0101.github.io/Furniture-Website/" target="_blank">View Project</a>
-                    </div>
-                </div>
+        <section id="Projects" class="section">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-index">06</span>
+                    <h2>Projects</h2>
+                </header>
+                <div class="projects">
+                    <article class="project reveal">
+                        <p class="project-num">01</p>
+                        <div>
+                            <h3><a href="https://habibakhaledfathallah0101.github.io/Furniture-Website/" target="_blank" rel="noopener">E&#8209;Commerce &mdash; Decora</a></h3>
+                            <p>A furniture website with a clean, responsive layout that gives the products room to breathe.</p>
+                            <p class="tags">HTML, CSS, JavaScript, Bootstrap</p>
+                        </div>
+                    </article>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-store"></i> OOP-Ecommerce</h4>
-                        <p class="fs-6">An e-commerce system inspired by Fawry, built using OOP principles including encapsulation, inheritance, polymorphism, and abstraction.</p>
-                        <a class="mt-auto" href="https://github.com/HabibaKhaledFathallah0101/oop-ecommerce" target="_blank">View Project</a>
-                    </div>
-                </div>
+                    <article class="project reveal">
+                        <p class="project-num">02</p>
+                        <div>
+                            <h3><a href="http://wellcare.runasp.net/" target="_blank" rel="noopener">WellCare &mdash; hospital system</a></h3>
+                            <p>A hospital management system built around CRUD operations &mdash; create, read, update and delete across the hospital's data &mdash; using the MVC pattern, with Entity Framework Core and LINQ handling the database side.</p>
+                            <p class="tags">CRUD, ASP.NET MVC, EF Core, LINQ</p>
+                        </div>
+                    </article>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-film"></i> Stream Vibe</h4>
-                        <p class="fs-6">A movie website that allows users to browse, search, and explore films with detailed information and an interactive UI.</p>
-                        <h6>Tech: HTML, CSS, React, JS, Tailwind, Bootstrap</h6>
-                        <a class="mt-auto" href="https://3laaeldeen911.github.io/StreamPlatform/" target="_blank">View Project</a>
-                    </div>
-                </div>
+                    <article class="project reveal">
+                        <p class="project-num">03</p>
+                        <div>
+                            <h3><a href="https://github.com/HabibaKhaledFathallah0101/oop-ecommerce" target="_blank" rel="noopener">OOP&#8209;Ecommerce</a></h3>
+                            <p>An e&#8209;commerce system inspired by Fawry, built around encapsulation, inheritance, polymorphism and abstraction.</p>
+                            <p class="tags">C#, OOP</p>
+                        </div>
+                    </article>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-list-check"></i> To Do List</h4>
-                        <p class="fs-6">A simple CRUD application built with .NET that allows users to add, view, update, and delete items.</p>
-                        <h6>Tech: ASP.NET, MVC, EF Core, LINQ</h6>
-                        <a class="mt-auto" href="https://to-do-list0.runasp.net/" target="_blank">View Project</a>
-                    </div>
-                </div>
+                    <article class="project reveal">
+                        <p class="project-num">04</p>
+                        <div>
+                            <h3><a href="https://3laaeldeen911.github.io/StreamPlatform/" target="_blank" rel="noopener">Stream Vibe</a></h3>
+                            <p>A movie site for browsing and searching films, with details per title and an interface meant for clicking around.</p>
+                            <p class="tags">React, JavaScript, Tailwind, Bootstrap</p>
+                        </div>
+                    </article>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card stagger-item h-100 d-flex flex-column">
-                        <h4><i class="fa-solid fa-bread-slice"></i> Bakery Website</h4>
-                        <p class="fs-6">Bakery website that allows users to buy and explore products with detailed information.</p>
-                        <h6>Tech: HTML, CSS</h6>
-                        <a class="mt-auto" href="https://habibakhaledfathallah0101.github.io/bakery/" target="_blank">View Project</a>
-                    </div>
+                    <article class="project reveal">
+                        <p class="project-num">05</p>
+                        <div>
+                            <h3><a href="https://to-do-list0.runasp.net/" target="_blank" rel="noopener">To Do List</a></h3>
+                            <p>A small CRUD application in .NET: add, view, update and delete, doing one job properly.</p>
+                            <p class="tags">ASP.NET, MVC, EF Core, LINQ</p>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <p class="project-num">06</p>
+                        <div>
+                            <h3><a href="https://habibakhaledfathallah0101.github.io/bakery/" target="_blank" rel="noopener">Bakery website</a></h3>
+                            <p>An online bakery for browsing products, with the product details written properly instead of filler.</p>
+                            <p class="tags">HTML, CSS</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section id="Contacts">
-            <hr>
-            <h1 class="text-center mb-5 reveal">Contact Me</h1>
-            <div class="social-links reveal">
-                <a href="https://www.linkedin.com/in/habiba-khaled-327591349/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/HabibaKhaledFathallah0101" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a>
-                <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-            </div>
-            <div class="text-center reveal">
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
-                </form>
+        <section id="Contacts" class="section section-dark">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-index">07</span>
+                    <h2>Contact</h2>
+                </header>
+                <div class="contact-grid">
+                    <div class="contact-side reveal">
+                        <p>Open to freelance backend work, .NET projects and anything with a real database behind it. The fastest way to reach me is LinkedIn.</p>
+                        <ul class="contact-links">
+                            <li><a href="https://www.linkedin.com/in/habiba-khaled-327591349/" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://github.com/HabibaKhaledFathallah0101" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="https://web.whatsapp.com/" target="_blank" rel="noopener">WhatsApp</a></li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form reveal" action="https://formspree.io/f/xrpbjokg" method="post" accept-charset="UTF-8" novalidate>
+                        <input type="hidden" name="_subject" value="New message from the portfolio contact form">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" required>
+                            <p class="field-error" data-error="name" hidden>Please enter your name.</p>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                            <p class="field-error" data-error="email" hidden>Please enter a valid email address, for example name@gmail.com.</p>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <p class="field-error" data-error="message" hidden>Please write a short message.</p>
+                        </div>
+                        <button class="btn" type="submit">Send message</button>
+                        <p class="form-note" data-form-note role="status" aria-live="polite">Prefer it another way? Find me on LinkedIn.</p>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <a href="#home" class="scroll-top" ><i style="color: white;" class="fs-1  fa-solid fa-arrow-up-long"></i></a>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>&copy; <span id="year">2026</span> Habiba Khaled</p>
+            <p>Built by hand with HTML, CSS and a little JavaScript.</p>
+            <a href="#home">Back to top &uarr;</a>
+        </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
